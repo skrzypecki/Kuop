@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url(tlo.jpg);
+    overflow: hidden;
+    padding: 0 3%;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-around;
+    font-weight: 600;
+    margin-top: 15px;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+}
+header a:hover{
+    color:palegreen;
+}
+.logo{
+    color: palegreen;
+    font-size: 40px;
+    font-weight: 700;
+}
+.myInfo{
+    padding: 0 3%;
+    margin-top: 10%;
+    max-width: 900px;
+}
+.myInfo h2{
+    color: #fff;
+    font-size: 50px;
+}
+.myInfo span{
+    color: palegreen;
+    font-size: 35px;
+}
+.add-me a{
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+    border: #fff 2px solid;
+    border-radius: 12px;
+    transition: .4s;
+    padding: 0 3.5%;
+}
+.add-me{
+    margin-left: 3%;
+    padding-top: 75px;
+}
+.add-me a:hover{
+    background-color: palegreen;
+    border: palegreen 2px solid;
+    
+}
+.myInfo p{
+    margin-top: 2%;
+    font-weight: 200;
+    color: white;
+    line-height: 1.5;
+}
+img{
+
+    margin-left: -85%;
+    animation: gowno 30s ease infinite;
+    scale: -15%;
+    position: absolute;
+}
+
+@keyframes gowno{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
